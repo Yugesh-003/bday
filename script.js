@@ -1,7 +1,7 @@
 // Fungsi untuk memulai musik
 function playMusic() {
   const music = document.getElementById('background-music');
-  audio.loop = true;
+  
   music.play();
 }
 window.addEventListener('DOMContentLoaded', function () {
@@ -70,7 +70,7 @@ const _slideDua = function () {
         _slideTiga();
       }, 1000);
     });
-  }, 40000);
+  }, 56000);
 };
 
 const _slideTiga = function () {
@@ -89,7 +89,7 @@ const _slideTiga = function () {
         _slideEmpat();
       }, 1000);
     });
-  }, 43000);
+  }, 22000);
 };
 
 const _slideEmpat = function () {

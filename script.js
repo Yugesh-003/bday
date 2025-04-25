@@ -1,7 +1,7 @@
 // Fungsi untuk memulai musik
 function playMusic() {
   const music = document.getElementById('background-music');
-  
+
   music.play();
 }
 window.addEventListener('DOMContentLoaded', function () {
@@ -16,7 +16,7 @@ const second = 1000,
   minute = second * 60,
   hour = minute * 60,
   day = hour * 24;
-let countDown = new Date('Apr 24, 2025 00:00:00').getTime(),
+let countDown = new Date('Apr 26, 2025 00:00:00').getTime(),
   x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
@@ -97,7 +97,7 @@ const _slideEmpat = function () {
   document.body.innerHTML = '';
 
   // Redirect to the next file
-  window.location.href = "birthday-cake.html"; // Replace with your actual next HTML file
+  window.location.href = 'birthday-cake.html'; // Replace with your actual next HTML file
 };
 
 // const _slideEmpat = function () {
@@ -181,8 +181,6 @@ new TypeIt('#teks2', {
   speed: 75,
   waitUntilVisible: true,
 }).go();
-
-
 
 new TypeIt('#trims', {
   strings: ['Terimakasih.'],

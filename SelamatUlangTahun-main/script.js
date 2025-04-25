@@ -92,36 +92,36 @@ const _slideTiga = function () {
   }, 43000);
 };
 
-function getRandomPosition(element) {
-  var x = document.body.offsetHeight - element.clientHeight;
-  var y = document.body.offsetWidth - element.clientWidth;
-  var randomX = Math.floor(Math.random() * 500);
-  var randomY = Math.floor(Math.random() * y);
-  return [randomX, randomY];
-}
-
 const _slideEmpat = function () {
-  const slideEmpat = document.getElementById('slideEmpat');
-  const btn = document.getElementsByTagName('button');
-  slideEmpat.classList.remove('d-none');
+  // Clear the screen by removing all elements or using a full reset
+  document.body.innerHTML = '';
 
-  btn[0].addEventListener('click', function () {
-    var xy = getRandomPosition(slideEmpat);
-    slideEmpat.style.top = xy[0] + 'px';
-    // slideEmpat.style.left = xy[1] + 'px';
-  });
-
-  btn[1].addEventListener('click', function () {
-    slideEmpat.classList.replace('animate__fadeInDown', 'animate__bounceOut');
-    slideEmpat.classList.remove('animate__delay-2s');
-    setTimeout(function () {
-      slideEmpat.remove();
-      setTimeout(() => {
-        _slideLima();
-      }, 500);
-    }, 1000);
-  });
+  // Redirect to the next file
+  window.location.href = "birthday-cake.html"; // Replace with your actual next HTML file
 };
+
+// const _slideEmpat = function () {
+//   const slideEmpat = document.getElementById('slideEmpat');
+//   const btn = document.getElementsByTagName('button');
+//   slideEmpat.classList.remove('d-none');
+
+//   btn[0].addEventListener('click', function () {
+//     var xy = getRandomPosition(slideEmpat);
+//     slideEmpat.style.top = xy[0] + 'px';
+//     // slideEmpat.style.left = xy[1] + 'px';
+//   });
+
+//   btn[1].addEventListener('click', function () {
+//     slideEmpat.classList.replace('animate__fadeInDown', 'animate__bounceOut');
+//     slideEmpat.classList.remove('animate__delay-2s');
+//     setTimeout(function () {
+//       slideEmpat.remove();
+//       setTimeout(() => {
+//         _slideLima();
+//       }, 500);
+//     }, 1000);
+//   });
+// };
 
 const _slideLima = function () {
   const slideLima = document.getElementById('slideLima');

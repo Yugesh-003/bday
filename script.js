@@ -16,12 +16,12 @@ const second = 1000,
   minute = second * 60,
   hour = minute * 60,
   day = hour * 24;
-let countDown = new Date('Apr 25, 2025 00:00:00').getTime(),
+let countDown = new Date('Apr 26, 2025 00:00:00').getTime(),
   x = setInterval(function () {
     let now = new Date().getTime(),
       distance = countDown - now;
     //(document.getElementById('days').innerText = Math.floor(distance / day)),
-      (document.getElementById('hours').innerText = Math.floor((distance % day) / hour)),
+    (document.getElementById('hours').innerText = Math.floor((distance % day) / hour)),
       (document.getElementById('minutes').innerText = Math.floor((distance % hour) / minute)),
       (document.getElementById('seconds').innerText = Math.floor((distance % minute) / second));
 
@@ -155,13 +155,13 @@ new TypeIt('#teks1', {
   strings: [
     'Happy Birthday🎂 to the one who knows me best and still decides to stick around.💗 You`re truly one of a kind!🪐',
     ' ',
-    'Wherever you are, I pray the world holds you gently and keeps you safe.',
+    'Wherever you are, I pray the world holds you gently and keeps you safe.🫂',
     ' ',
     'You are never apart - maybe in distance but never in heart💙',
     ' ',
-    'I hope every step you take is guided with ease and leads you closer to your dreams.',
+    'I hope every step you take is guided with ease and leads you closer to your dreams.🍀',
     ' ',
-    'I hope even the things that once broke you become the reason you rise stronger.  You`re not being cooked di, you`re just being shaped di chellowm💙😄',
+    'I hope even the things that once broke you become the reason you rise stronger.❤️‍🩹  You`re not being cooked di, you`re just being shaped di chellowm💙😄',
   ],
 
   startDelay: 4000,
@@ -174,6 +174,8 @@ new TypeIt('#teks2', {
     'Have I told you lately? I`m grateful to have you as my friend🫂',
     ' ',
     'I`ll lost track of time when I`m talking with you..⌛👀',
+    ' ',
+    'I love those late-night talks where time slips away,🫠 and it`s just hearts speaking in whispers.🙈',
     ' ',
     '- Wishing you all the best, for the rest of your life...🍀',
   ],
